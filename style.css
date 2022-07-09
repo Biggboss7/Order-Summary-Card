@@ -1,0 +1,134 @@
+/* Universal Styling */
+:root {
+  --pale-blue : hsl(225, 100%, 94%);
+  --bright-blue : hsl(245, 75%, 52%);
+  --very-pale-blue : hsl(225, 100%, 98%);
+  --desaturated-blue : hsl(224, 23%, 55%);
+  --dark-blue : hsl(223, 47%, 23%);
+  --white : #FFFFFF;
+}
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: var(--pale-blue);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--desaturated-blue);
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.heading {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.big {
+  margin:1rem 0;
+  font-size: 1.75rem;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+/* Main Card Section */
+.card {
+  width: 28.125rem;
+  height: 43.5625rem;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 100%;
+}
+
+.card-main-content {
+  padding:1rem 3rem;
+}
+
+.card-header p {
+  padding: 0 1.5rem;
+  line-height: 26px;
+}
+
+.card-subscription-section {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1.5625rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--very-pale-blue);
+  border-radius: 11px;
+}
+
+.subscription-fee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.change {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color:var(--bright-blue);
+}
+
+.change:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0.9375rem 0;
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border-style: none;
+  border-radius: 11px;
+  box-shadow: 0px 8px 20px 0 var(--desaturated-blue);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.cancelation {
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color:var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.cancelation:hover {
+  color:var(--dark-blue);
+}
